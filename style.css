@@ -9,3 +9,9 @@ footer{
 body{
         background-color: rgb(60, 215, 239);
 }
+#hq720{
+        width: 250PX;  
+        height: 250px;
+        border-radius: 50%;
+
+}
