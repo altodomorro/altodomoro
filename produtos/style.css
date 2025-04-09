@@ -1,3 +1,6 @@
+body{
+    margin:auto;
+}
 header {
     background-color: rgb(43, 43, 212);
     padding: 20px;
@@ -86,18 +89,73 @@ img:hover {
 
 @media (max-width: 768px) {
     .produtos {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .produtos li {
         width: 90%;
         max-width: 400px;
+        margin-bottom: 15px;
     }
-footer img{
-    
 
+    .produtos h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #290254;
+        text-align: center;
+    }
+
+    .produtos p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .produtos span {
+        font-weight: bold;
+        color: #27ae60;
+        font-size: 18px;
+    }
 }
-.copyright{
-    
-}
+
+    /* IMAGENS */
+    img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: block;
+        margin: 20px auto;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #110234;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    footer img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100px;
+    }
+
+    .copyright {
+        margin-top: 15px;
+        font-style: italic;
+        font-size: 14px;
+    }
